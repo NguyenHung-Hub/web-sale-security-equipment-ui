@@ -5,8 +5,79 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Home</title>
+
+        <!-- font-awesome -->
+        <script
+            src="https://kit.fontawesome.com/3ff768b4e9.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- css -->
+        <link rel="stylesheet" href="./assets/css/base.css" />
+
+        <link rel="stylesheet" href="./assets/css/header.css" />
     </head>
     <body>
-        <h1>Home page</h1>
+        <header>
+            <div class="header-main">
+                <div class="header-logo">
+                    <img src="./assets/image/main-logo.jpg" alt="Logo" />
+                </div>
+                <div class="header-search">
+                    <div class="search-box">
+                        <input
+                            class="search-input"
+                            type="text"
+                            placeholder="Search"
+                        />
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="header-user-actions">
+                    <div class="action-btn">
+                        <i class="fas fa-cart-plus"></i>
+                    </div>
+                    <div class="action-btn">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="action-btn">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                </div>
+            </div>
+            <nav class="desktop-nav">
+                <ul class="desktop-nav-list">
+                    <li class="desktop-nav-item">
+                        <a href="#">Trang chủ</a>
+                    </li>
+                    <li class="desktop-nav-item">
+                        <a href="#">Camera quan sát</a>
+                        <ul class="desktop-subnav">
+                            <li class="desktop-nav-item">
+                                <a href="">Camera Wifi</a>
+                            </li>
+                            <li class="desktop-nav-item">
+                                <a href="">Camera siêu nhỏ</a>
+                            </li>
+                            <li class="desktop-nav-item">
+                                <a href="">Camera giá rẻ</a>
+                            </li>
+                            <li class="desktop-nav-item">
+                                <a href="">Camera IP</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="desktop-nav-item">
+                        <a href="#">Phụ kiện</a>
+                    </li>
+                    <li class="desktop-nav-item">
+                        <a href="#">Dịch vụ</a>
+                    </li>
+                    <li class="desktop-nav-item">
+                        <a href="#">Liên hệ</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
     </body>
 </html>
