@@ -1,16 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 :root {
     /* --bg-nav: #88d9cf; */
     --bg-nav: #fff;
     --bg-nav-hover: #fff;
     --color-nav: #252525;
     --color-nav-hover: #2fa1da;
+    --color-primary: #2fa1da;
+    --color-primary-light: #84d9fe;
+}
+header {
 }
 .header-main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border: 1px solid #000; */
 }
 .header-logo {
     flex-grow: 2;
@@ -109,6 +111,7 @@
     font-weight: bold;
     color: var(--color-nav);
 }
+
 .desktop-nav-list .desktop-nav-item a {
     position: relative;
     display: block;
@@ -146,7 +149,7 @@
 }
 
 .desktop-nav-list > .desktop-nav-item:hover > a,
-.desktop-nav-list .desktop-subnav li:hover a {
+.desktop-nav-list .desktop-subnav > li:hover > a {
     color: var(--color-nav-hover);
 
     text-decoration: none;
@@ -169,7 +172,7 @@
     background: var(--bg-color-primary);
 }
 .desktop-nav-list .desktop-subnav li a {
-    color: var(--color-primary);
+    color: var(--color-nav);
 }
 .nav-arrow-down {
     padding: 0 4px;
@@ -184,5 +187,20 @@
     100% {
         opacity: 1;
         top: calc(100% + 3px);
+    }
+}
+
+@media only screen and (max-width: 48em) {
+    .header-logo img {
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .header-user-actions {
+        display: none;
+    }
+
+    .desktop-nav-list .desktop-nav-item a {
+        font-size: 1rem;
     }
 }

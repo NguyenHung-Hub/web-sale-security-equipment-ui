@@ -15,7 +15,7 @@
 .slider-container {
     width: 100%;
     height: 300px;
-    background: rgb(253, 119, 184);
+    background: rgb(245, 184, 214);
     margin: 24px 0;
     border-radius: 16px;
 }
@@ -179,4 +179,22 @@
 .product-price-old {
     color: var(--text-grey);
     text-decoration: line-through;
+}
+
+@media only screen and (max-width: 48em) {
+    .sidebar-box {
+        display: none;
+    }
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        display: none;
+    }
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
